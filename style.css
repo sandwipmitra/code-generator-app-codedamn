@@ -1,4 +1,3 @@
-
 /* CSS Reset */
 
 *,
@@ -24,4 +23,23 @@ body {
   gap: 16px;
   place-content: center;
   text-align: center;
+}
+
+#title {
+  background-image: linear-gradient(92deg, #f35626, #feab3a);
+  background-clip: text;
+  color: transparent;
+}
+
+h1 {
+  animation: hue 10s infinite linear;
+}
+
+@-webkit-keyframes hue{
+  from{
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to{
+    -webkit-filter: hue-rotate(-360deg);
+  }
 }
