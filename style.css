@@ -35,11 +35,42 @@ h1 {
   animation: hue 10s infinite linear;
 }
 
-@-webkit-keyframes hue{
-  from{
+@-webkit-keyframes hue {
+  from {
     -webkit-filter: hue-rotate(0deg);
   }
-  to{
+
+  to {
     -webkit-filter: hue-rotate(-360deg);
   }
+}
+
+.quote-box {
+  width: 400px;
+  padding: 16px;
+  border: 5px solid;
+  border-image: linear-gradient(45deg, purple, orange) 1;
+}
+
+#author {
+  float: right;
+  color: gray;
+  font-weight: bold;
+  font-style: oblique;
+
+}
+
+#btn {
+  padding: 8px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: 0.5s;
+  border: 2px solid #fff;
+  background-color: #000;
+  color: #fff;
+}
+
+#btn:hover {
+  background-color: #fff;
+  color: #000;
 }
